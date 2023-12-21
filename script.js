@@ -1,25 +1,13 @@
-// JavaScript code
-// Get the counter element
-var counterElement = document.getElementById('counter');
-
-// Get the increment button element
-var incrementBtn = document.getElementById('incrementBtn');
-
-// Initial counter value
-var counterValue = 0;
-
-// Function to handle the increment button click
-function incrementCounter() {
-    // Display an alert with the un-incremented value
-    alert("Un-incremented Value: " + counterValue);
-
-    // Increment the counter value
-    counterValue++;
-
-    // Update the counter text
-    counterElement.textContent = counterValue;
+//your JS code here. If required.
+let p=document.querySelector("#counter");
+let btn=document.querySelector("#incrementBtn");
+btn.addEventListener("click",onclick);
+ let i=0;
+ let currentValue = parseInt(p.innerText);
+function onclick(){
+	
+	alert(currentValue);
+	currentValue++;
+	p.innerText=currentValue ;	
+	
 }
-
-// Attach the incrementCounter function to the button click event
-incrementBtn.addEventListener('click', incrementCounter);
-
